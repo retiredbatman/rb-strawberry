@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'login' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:admin',
+4 verbose adduser   name: 'admin',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'cd@cndj.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-02-26T12:41:07.768Z' }
+5 verbose request uri http://staging-hotels.redbus.in:8983/-/user/org.couchdb.user:admin
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 6:11:07 PM
+8 verbose request id e239a32f4ee30917
+9 http request PUT http://staging-hotels.redbus.in:8983/-/user/org.couchdb.user:admin
+10 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 52.76.153.8:8983
+11 info attempt registry request try #2 at 6:11:18 PM
+12 http request PUT http://staging-hotels.redbus.in:8983/-/user/org.couchdb.user:admin
+13 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 52.76.153.8:8983
+14 info attempt registry request try #3 at 6:12:20 PM
+15 http request PUT http://staging-hotels.redbus.in:8983/-/user/org.couchdb.user:admin
+16 verbose request invalidating C:\Users\Sudip Roy\AppData\Roaming\npm-cache\staging-hotels.redbus.in_8983\-\user\org.couchdb.user_3Aadmin on PUT
+17 verbose adduser back [ { [Error: connect ECONNREFUSED 52.76.153.8:8983]
+17 verbose adduser     code: 'ECONNREFUSED',
+17 verbose adduser     errno: 'ECONNREFUSED',
+17 verbose adduser     syscall: 'connect',
+17 verbose adduser     address: '52.76.153.8',
+17 verbose adduser     port: 8983 },
+17 verbose adduser   undefined,
+17 verbose adduser   undefined ]
+18 verbose stack Error: connect ECONNREFUSED 52.76.153.8:8983
+18 verbose stack     at Object.exports._errnoException (util.js:856:11)
+18 verbose stack     at exports._exceptionWithHostPort (util.js:879:20)
+18 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+19 verbose cwd F:\npm packages\rb-strawberry
+20 error Windows_NT 6.2.9200
+21 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "login"
+22 error node v5.6.0
+23 error npm  v3.6.0
+24 error code ECONNREFUSED
+25 error errno ECONNREFUSED
+26 error syscall connect
+27 error Error: connect ECONNREFUSED 52.76.153.8:8983
+27 error     at Object.exports._errnoException (util.js:856:11)
+27 error     at exports._exceptionWithHostPort (util.js:879:20)
+27 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1053:14)
+27 error  { [Error: connect ECONNREFUSED 52.76.153.8:8983]
+27 error   code: 'ECONNREFUSED',
+27 error   errno: 'ECONNREFUSED',
+27 error   syscall: 'connect',
+27 error   address: '52.76.153.8',
+27 error   port: 8983 }
+28 error If you are behind a proxy, please make sure that the
+28 error 'proxy' config is set properly.  See: 'npm help config'
+29 verbose exit [ 1, true ]

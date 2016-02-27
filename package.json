@@ -1,0 +1,20 @@
+{
+  "name": "rb-strawberry",
+  "version": "1.0.0",
+  "description": "a small list of function for adding and removing class , events etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "strawberry",
+    "events",
+    "classes",
+    "manipulation"
+  ],
+  "author": "Sudip Roy",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://staging-hotels.redbus.in:8983/"
+  }
+}

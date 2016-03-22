@@ -1,6 +1,6 @@
 {
   "name": "rb-strawberry",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a small list of function for adding and removing class , events etc.",
   "main": "index.js",
   "scripts": {

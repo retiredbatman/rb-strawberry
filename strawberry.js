@@ -177,6 +177,30 @@ var strawberry = (function() {
 		}
 	};
 
+	var getScrollTop = function getScrollTop() {
+		if (typeof pageYOffset != 'undefined') {
+			//most browsers except IE before #9
+			return pageYOffset;
+		} else {
+			var B = document.body; //IE 'quirks'
+			var D = document.documentElement; //IE with doctype
+			D = (D.clientHeight) ? D : B;
+			return D.scrollTop;
+		}
+	};
+
+	var getScrollLeft = function getScrollLeft() {
+		if (typeof pageXOffset != 'undefined') {
+			//most browsers except IE before #9
+			return pageXOffset;
+		} else {
+			var B = document.body; //IE 'quirks'
+			var D = document.documentElement; //IE with doctype
+			D = (D.clientWidth) ? D : B;
+			return D.scrollLeft;
+		}
+	};
+
 	if (!Array.prototype.forEach) {
 		Array.prototype.forEach = function arrayForEach(callback, thisArg) {
 
@@ -327,7 +351,10 @@ var strawberry = (function() {
 		mouseCoords: mouseCoords,
 		removeClass: removeClass,
 		emptyElem: emptyElem,
-		removeEvents: removeEvents
+		removeEvents: removeEvents,
+		hasClass: hasClass,
+		getScrollTop: getScrollTop,
+		getScrollLeft: getScrollLeft
 	};
 })();
 

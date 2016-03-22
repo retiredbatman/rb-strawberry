@@ -13,8 +13,5 @@
     "manipulation"
   ],
   "author": "Sudip Roy",
-  "license": "ISC",
-  "publishConfig": {
-    "registry": "http://staging-hotels.redbus.in:8983/"
-  }
+  "license": "ISC"
 }

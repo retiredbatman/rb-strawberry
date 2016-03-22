@@ -354,7 +354,8 @@ var strawberry = (function() {
 		removeEvents: removeEvents,
 		hasClass: hasClass,
 		getScrollTop: getScrollTop,
-		getScrollLeft: getScrollLeft
+		getScrollLeft: getScrollLeft,
+		removeEvent: removeEvent
 	};
 })();
 
